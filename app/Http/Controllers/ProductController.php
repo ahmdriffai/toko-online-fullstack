@@ -14,7 +14,7 @@ class ProductController extends Controller
         $this->productRepsoitory = $productRepository;
     }
 
-    public function index(ProductAddRequest $request)
+    public function store(ProductAddRequest $request)
     {
         $categoryId = $request->input('category_id');
         $detailProduct = [

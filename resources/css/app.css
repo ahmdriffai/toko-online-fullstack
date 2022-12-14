@@ -2,16 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500;600;700;800;900&display=swap');
 * {
-    font-family: 'Work Sans', sans-serif !important;
+    font-family: 'Urbanist', sans-serif !important;
 }
 
-.work-sans {
-    font-family: 'Work Sans', sans-serif;
-}
-        
 #menu-toggle:checked + #menu {
     display: block;
 }
