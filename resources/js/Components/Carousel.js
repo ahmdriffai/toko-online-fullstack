@@ -27,10 +27,10 @@ export default function Carousel({banners}) {
     return (
     <div className="mx-5 lg:mx-24 m-5">
         <Slider {...settings}>
-            <div className="w-full bg-slate-400 rounded-xl overflow-hidden">
+            <div className="w-full bg-slate-400 overflow-hidden">
                 <img src={banners.banner1} />
             </div>
-            <div className="w-full bg-slate-400 rounded-xl overflow-hidden">
+            <div className="w-full bg-slate-400 overflow-hidden">
                 <img src={banners.banner2} />
             </div>
         </Slider>

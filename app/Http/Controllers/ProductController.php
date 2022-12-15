@@ -3,8 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\ProductAddRequest;
+use App\Models\Product;
 use App\Repositories\ProductRepository;
 use Illuminate\Http\Request;
+use Inertia\Inertia;
 
 class ProductController extends Controller
 {
@@ -30,5 +32,13 @@ class ProductController extends Controller
         } catch (\Throwable $th) {
             abort(500);
         }
+    }
+
+    public function detail($id)
+    {
+        $product = Product::find($id);
+        return Inertia::render('Product/Detail', [
+            'product' => $product,
+        ]);
     }
 }

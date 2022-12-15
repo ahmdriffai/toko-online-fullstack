@@ -7,12 +7,11 @@ import ProductList from '@/Components/ProdctList';
 import MenuList from '@/Components/MenuList';
 import Footer from '@/Components/Footer';
 import CategoryList from '@/Components/CategoryList';
+import App from '@/Layouts/App';
 
 export default function Welcome({ products, categories, banners }) {
     return (
-        <>
-            <Head title='Home Page' />
-            <Navbar />
+        <App>
             <Carousel banners={banners}/>
             <MenuList />
             <div className="mx-5 lg:mx-14 mt-7">
@@ -20,7 +19,6 @@ export default function Welcome({ products, categories, banners }) {
                 <CategoryList categories={categories} />
                 <ProductList products={products}/>
             </div>
-            <Footer />
-        </>
+        </App>
     );
 }
